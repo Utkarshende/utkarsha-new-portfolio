@@ -4,23 +4,23 @@ import { MapPin, Download, Linkedin, Github, Mail, Phone } from "lucide-react";
 const SOCIAL_ICONS = [
   {
     Icon: Github,
-    to: "https://github.com/ravikanttarare95",
+    to: "https://github.com/Utkarshende",
   },
   {
     Icon: Linkedin,
-    to: "https://www.linkedin.com/in/ravikanttarare95",
+    to: "https://www.linkedin.com/in/utkarsha-shende-344b57231/",
   },
   {
     Icon: SiPeerlist,
-    to: "https://peerlist.io/ravikanttarare",
+    to: "https://peerlist.io/utkarshende",
   },
   {
     Icon: Mail,
-    to: "mailto:ravikanttarare2001@gmail.com",
+    to: "mailto:utkarshapd1403@gmail.com",
   },
   {
     Icon: Phone,
-    to: "tel:8275957698",
+    to: "tel:9022767403",
   },
 ];
 export default SOCIAL_ICONS;
