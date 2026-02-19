@@ -12,50 +12,66 @@ function ProjectCard({
   liveLink,
 }) {
   return (
-    <div className="group rounded overflow-hidden shadow-md hover:shadow-xl transition duration-300 bg-white flex flex-col">
-      {/* Image */}
+    <div className="w-full max-w-6xl mx-auto rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-500 bg-white flex flex-col">
+      
+      {/* Large Hero Image */}
       <div className="relative overflow-hidden">
         <img
           src={projectPhoto}
           alt={projectTitle}
-          className="w-full h-64 md:h-72 object-cover transform group-hover:scale-105 transition duration-300"
+          className="w-full h-[420px] md:h-[500px] object-cover transform hover:scale-105 transition duration-500"
         />
       </div>
 
       {/* Content */}
-      <div className="p-8 flex flex-col">
-        <h4 className="text-3xl font-bold text-gray-700 mb-4">
+      <div className="p-10 flex flex-col">
+        <h4 className="text-4xl font-bold text-gray-800 mb-6">
           {projectTitle}
         </h4>
-        <p className="text-gray-600 mb-6 leading-relaxed">{projectDesc}</p>
 
-        <h5 className="font-semibold text-gray-700 mb-3">Key Features:</h5>
-        <ul className="list-disc list-inside space-y-2 text-gray-700 marker:text-cyan-700 mb-6">
-          {features.map((feature, i) => (
-            <li key={i}>{feature}</li>
-          ))}
-        </ul>
+        <p className="text-gray-600 text-lg leading-relaxed mb-8">
+          {projectDesc}
+        </p>
 
-        {/* Tags */}
-        <h5 className="font-semibold text-gray-700 mb-3">Technologies:</h5>
-        <ul className="flex flex-wrap gap-3 mb-8">
-          {technologies.map((technology, index) => (
-            <li
-              className="bg-gradient-to-r from-cyan-700 to-cyan-800 px-4 py-2 rounded-full text-white text-sm font-medium shadow-sm"
-              key={index}
-            >
-              {technology}
-            </li>
-          ))}
-        </ul>
+        <div className="grid md:grid-cols-2 gap-10">
+          
+          {/* Features */}
+          <div>
+            <h5 className="font-semibold text-xl text-gray-800 mb-4">
+              Key Features
+            </h5>
+            <ul className="list-disc list-inside space-y-3 text-gray-700 marker:text-cyan-700">
+              {features.map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Technologies */}
+          <div>
+            <h5 className="font-semibold text-xl text-gray-800 mb-4">
+              Technologies Used
+            </h5>
+            <div className="flex flex-wrap gap-3">
+              {technologies.map((technology, index) => (
+                <span
+                  key={index}
+                  className="bg-gradient-to-r from-cyan-700 to-cyan-800 px-4 py-2 rounded-full text-white text-sm font-medium shadow"
+                >
+                  {technology}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row justify-between gap-4 mt-auto">
+        <div className="flex flex-col sm:flex-row gap-6 mt-12">
           <Button
             btnTitle={
               <div className="flex items-center gap-2">
                 <Github className="w-5 h-5" />
-                Code
+                View Code
               </div>
             }
             btnVariant="secondary"
@@ -64,10 +80,10 @@ function ProjectCard({
           />
           <Button
             btnTitle={
-              <>
+              <div className="flex items-center gap-2">
                 <ExternalLink className="w-5 h-5" />
                 Live Demo
-              </>
+              </div>
             }
             btnVariant="primary"
             customStyle="w-full"

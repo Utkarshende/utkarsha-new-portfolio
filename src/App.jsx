@@ -177,7 +177,7 @@ function App() {
               btnSize={"lg"}
               onBtnClick={() => {
                 window.open(
-                  "https://www.linkedin.com/in/ravikanttarare95",
+                  "https://www.linkedin.com/in/utkarsha-shende-344b57231/",
                   "_blank"
                 );
               }}
@@ -221,45 +221,45 @@ function App() {
         </Element>
         {/*Projects Section */}
 
-        <Element name="projects" className=" w-full">
-          <section className="py-16">
-            {/* Heading */}
-            <H2
-              headingTitle={"Featured Projects"}
-              description={
-                " A selection of projects that highlight my skills in full-stack development, user-focused design, and modern web technologies."
-              }
-            />
+      <Element name="projects" className="w-full">
+  <section className="py-20">
+    <H2
+      headingTitle={"Ramtek Bazar — Featured Project"}
+      description={
+        "This is my flagship full-stack MERN marketplace application built for hyperlocal buying and selling."
+      }
+    />
 
-            {/* Projects Grid */}
-            <div className="grid w-full gap-10 lg:grid-cols-2">
-              {PROJECTS_INFO.map((projectObj) => {
-                const {
-                  id,
-                  projectPhoto,
-                  projectTitle,
-                  projectDesc,
-                  features,
-                  technologies,
-                  gitHubLink,
-                  liveLink,
-                } = projectObj;
-                return (
-                  <ProjectCard
-                    projectPhoto={projectPhoto}
-                    projectTitle={projectTitle}
-                    projectDesc={projectDesc}
-                    features={features}
-                    technologies={technologies}
-                    gitHubLink={gitHubLink}
-                    liveLink={liveLink}
-                    key={id}
-                  />
-                );
-              })}
-            </div>
-          </section>
-        </Element>
+    <div className="mt-12 flex justify-center">
+      {PROJECTS_INFO.map((projectObj) => {
+        const {
+          id,
+          projectPhoto,
+          projectTitle,
+          projectDesc,
+          features,
+          technologies,
+          gitHubLink,
+          liveLink,
+        } = projectObj;
+
+        return (
+          <ProjectCard
+            key={id}
+            projectPhoto={projectPhoto}
+            projectTitle={projectTitle}
+            projectDesc={projectDesc}
+            features={features}
+            technologies={technologies}
+            gitHubLink={gitHubLink}
+            liveLink={liveLink}
+          />
+        );
+      })}
+    </div>
+  </section>
+</Element>
+
         {/*Technical Skills Section */}
 
         <Element name="skills">

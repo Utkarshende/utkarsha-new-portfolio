@@ -1,44 +1,37 @@
-import PocketPilotImg from "./../assets/pocket-pilot.png";
-import BloGridImg from "./../assets/blogrid.png";
+import HomePage from "./../assets/homepage-demo.png";
 
 const PROJECTS_INFO = [
   {
     id: 1,
-    projectPhoto: PocketPilotImg,
-    projectTitle: "Pocket Pilot",
+    projectPhoto: HomePage,
+    projectTitle: "Ramtek Bazar",
     projectDesc:
-      "Pocket Pilot is a finance management app where users efficiently track and manage their personal finances, including income, expenses, budgets.",
+      "Ramtek Bazar is a hyperlocal marketplace web application where users can buy and sell electronics, vehicles, furniture, and other items within Ramtek. It enables direct contact between buyers and sellers via WhatsApp with zero commission fees.",
+
     features: [
-      "User registration	/	login (email/password) and Google	OAuth.",
-      "JWT-based	authentication	for protected routes.",
-      "Category-wise income and expense management with pie chart.",
-      "Monthly budget storage and overspend	alerts.",
-      "Track Full Transaction	Details.",
-      "Data	encryption	for security.",
-      "Responsive design for mobile and desktop",
+      "User registration and login with JWT authentication.",
+      "Secure protected routes for sellers and buyers.",
+      "Create, edit, and delete product listings.",
+      "Upload product images with details like price, category, and description.",
+      "Seller profile page with all listed products.",
+      "Customer reviews system with edit and delete permissions.",
+      "Direct WhatsApp contact integration with seller.",
+      "Responsive UI optimized for mobile and desktop.",
     ],
-    technologies: ["React", "Tailwindcss", "Node.js", "Express.js", "MondoDB"],
-    gitHubLink: "https://github.com/ravikanttarare95/pocket-pilot.git",
-    liveLink: "https://pocket-pilot.onrender.com",
-  },
-  {
-    id: 2,
-    projectPhoto: BloGridImg,
-    projectTitle: "BloGrid",
-    projectDesc:
-      "BloGrid is a blogging app to share your stories, ideas, and experiences with the world.",
-    features: [
-      "User registration	/	login (email/password) and Google	OAuth.",
-      "JWT-based	authentication	for protected routes.",
-      "Create, edit, and post blogs.",
-      "Users can comment, like, and mark blogs as favourites.",
-      "Image upload with drag & drop using imagekit.io.",
-      "API caching for faster performance.",
-      "Data encryption for security.",
+
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT Authentication",
+      "Axios"
     ],
-    technologies: ["React", "Tailwindcss", "Node.js", "Express.js", "MondoDB"],
-    gitHubLink: "https://github.com/ravikanttarare95/blogrid.git",
-    liveLink: "https://blogrid-ui.onrender.com",
+
+    gitHubLink: "https://github.com/Utkarshende/ramtek-mini-e-shop",
+    liveLink: "https://ramtek-shop.netlify.app",
   },
 ];
+
 export default PROJECTS_INFO;
