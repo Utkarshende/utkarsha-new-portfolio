@@ -142,12 +142,6 @@ function App() {
                   "_blank"
                 );
 
-                // const link = document.createElement("a");
-                // link.href = "/resume-ravikant-tarare.pdf";
-                // link.download = "resume-ravikant-tarare.pdf";
-                // document.body.appendChild(link);
-                // link.click();
-                // document.body.removeChild(link);
               }}
             />
             <Button
