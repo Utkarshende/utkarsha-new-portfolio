@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, Element } from "react-scroll";
-import MyPhoto from "./assets/my-photo.png";
 import {
   MapPin,
   Download,
@@ -56,15 +55,9 @@ function App() {
           isNavOpen ? "flex" : "hidden"
         } max-md:fixed z-50 right-0 left-0 md:flex flex-col items-center h-screen`}
       >
-        {/* Profile image (visible on md+ screens) */}
-        <img
-          src={MyPhoto}
-          alt="My Photo"
-          className="w-32 h-32 rounded-full border-4 border-cyan-700 mb-6 bg-gradient-to-b from-cyan-100 to-cyan-50"
-        />
 
         {/* Nav links */}
-        <div className="mt-4 w-full space-y-3 border-t border-t-gray-100">
+        <div className="mt-6 w-full space-y-3 border-t border-t-gray-100">
           {NAV_LINKS.map(({ linkTitle, icon: Icon, to }) => {
             return (
               <Link
@@ -87,23 +80,14 @@ function App() {
       </nav>
 
       {/* Main Content */}
-      <main className="p-6 md:p-12 overflow-y-auto " id="scrollableMain">
+      <main className="p-6 mt-[-50px] md:p-12 overflow-y-auto " id="scrollableMain">
         <Element
           name="about"
           className="bg-gray-50 rounded shadow-md hover:shadow-xl transition duration-300 p-7 sm:p-10 w-full"
         >
-          {/* Profile image (visible only on small screens) */}
-          <div className="flex justify-center mb-6 md:hidden">
-            <img
-              src={MyPhoto}
-              alt="My Photo"
-              className="w-32 h-32 rounded-full border-4 border-cyan-700 bg-gradient-to-b from-cyan-100 to-cyan-50"
-            />
-          </div>
-
           {/* Name */}
-          <h1 className="text-5xl font-bold text-gray-700 mb-3">
-            Ravikant Tarare
+          <h1 className="text-5xl font-bold text-gray-700 mb-3 ">
+            Utkarsha Shende
           </h1>
 
           {/* Title / Positions */}
@@ -154,7 +138,7 @@ function App() {
               btnSize={"lg"}
               onBtnClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1s0kWBye9EVF4-7a6A-wnrZ23Z6GvT3su/view",
+                  "https://drive.google.com/file/d/1lzxtHSpAFRZiuHflT2J-aGqcrS6cWvWZ/view?usp=drive_link",
                   "_blank"
                 );
 
