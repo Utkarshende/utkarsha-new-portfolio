@@ -138,7 +138,7 @@ function App() {
               btnSize={"lg"}
               onBtnClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1lzxtHSpAFRZiuHflT2J-aGqcrS6cWvWZ/view?usp=drive_link",
+                  "https://drive.google.com/file/d/10VFUzRlCIG5IDLC2LNhiZnh3uJYPretD/view?usp=drive_link",
                   "_blank"
                 );
 
