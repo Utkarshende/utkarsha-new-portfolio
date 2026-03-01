@@ -115,7 +115,7 @@ function App() {
           {/* Location */}
           <p className="flex items-center text-gray-600 text-lg mb-8">
             <MapPin className="w-6 h-6 mr-2" />
-            Pune, India
+            <Nagpur></Nagpur>, India
           </p>
 
           {/* Bio */}
